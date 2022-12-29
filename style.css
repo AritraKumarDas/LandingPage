@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: rgb(216, 229, 235);
+}
+
+
+
+.left-col {
+    padding-block: 4rem;
+    background-color: white;
+    border-radius: 5px 0 0 5px;
+}
+
+.right-col {
+    padding: 2rem;
+    border-radius: 0 5px 5px 0;
+    background-image: url('https://cdn.pixabay.com/photo/2019/07/24/10/57/fantasy-4359903__340.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#form {
+    border-radius: 5px;
+    padding-block: 3rem;
+    padding-left: 12%;
+    padding-right: 12%;
+
+}
+
+form h2 {
+    font-size: calc(2rem + 0.67vw);
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+    padding-top: 1rem;
+
+}
+
+form .welcome-text {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+form .form-label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+form>input[type="password"],
+form>input[type="email"] {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 1.4rem;
+    padding: 0.7px 3px;
+    border-radius: 5px;
+    margin-bottom: 1.2rem;
+}
+
+.remember * {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.2rem;
+}
+
+.remember input {
+    cursor: pointer;
+}
+
+form input::placeholder {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+form input:focus {
+    border-color: purple;
+}
+
+form button {
+    width: 100%;
+    padding-block: 0.5rem;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+
+}
+
+form button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+form>.google-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding-block: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-block: 1.5rem;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 500;
+}
+
+.sign-up {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-block: 1.5rem;
+
+}
+
+.sign-up span {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sign-up a {
+    font-weight: bold;
+    color: black;
+}
+
+
+
+a:hover {
+    color: purple;
+    border-color: purple;
+}
+
+
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+    border: 0.5px solid rgba(245, 245, 245, 0.5);
+    border-radius: 1px;
+    backdrop-filter: blur(5px);
+}
+
+.content q {
+    font-size: calc(1.3rem + 0.67vw);
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.5px;
+    line-height: 2.8rem;
+
+
+}
+
+.ratings {
+    text-align: right;
+    color: white;
+    margin-top: 2rem;
+    font-size: calc(1rem + 0.2vw);
+}
+
+.content h3 {
+    font-size: calc(2.1rem + 0.67vw);
+    font-weight: 600;
+    color: whitesmoke;
+    letter-spacing: 0.5px;
+    line-height: 2.3rem;
+    padding-bottom: 1.5rem;
+}
+
+.author-details h4 {
+    color: whitesmoke;
+    font-size: 1.3;
+}
+
+.author-details p {
+    color: rgba(245, 245, 245, 0.8);
+    font-size: 1.25rem;
+}
+
+.controls button {
+    width: 4rem;
+    height: 4rem;
+    outline: none;
+    border: 0.2px solid rgba(245, 245, 245, 0.4);
+    border-radius: 50%;
+    background-color: unset;
+    color: antiquewhite;
+    margin-left: 1.5rem;
+    text-align: center;
+
+}
+
+.controls button:hover {
+    background-color: rgba(245, 245, 245, 0.4);
+
+}
+
+.controls button i {
+    transform: scaleX(1.3);
+
+}
+
+@media screen and (max-width:767px) {
+
+    .container {
+        background-color: rgb(216, 229, 235);
+    }
+
+    .left-col {
+        padding-block: 2rem;
+
+    }
+
+    .right-col {
+        padding: 24rem 2rem 2rem;
+
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    body {
+        background-color: rgb(216, 229, 235);
+    }
+
+    .container {
+        background-color: unset;
+    }
+
+    .left-col {
+        background-color: white;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    #form {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    #form {
+        padding-left: 12%;
+        padding-right: 12%;
+
+    }
+
+    .container {
+        min-width: 350px;
+    }
+}
