@@ -16,9 +16,10 @@ a {
     text-decoration: none;
 }
 
-.container {
+.container-lg {
     border-radius: 5px;
     background-color: rgb(216, 229, 235);
+    min-width: 350px;
 }
 
 
@@ -61,7 +62,7 @@ form .welcome-text {
 }
 
 form .form-label {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
@@ -70,8 +71,8 @@ form>input[type="password"],
 form>input[type="email"] {
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    font-size: 1.4rem;
-    padding: 0.7px 3px;
+    font-size: 1.5rem;
+    padding: 5px;
     border-radius: 5px;
     margin-bottom: 1.2rem;
 }
@@ -87,7 +88,7 @@ form>input[type="email"] {
 }
 
 form input::placeholder {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.5);
 
 }
@@ -98,7 +99,8 @@ form input:focus {
 
 form button {
     width: 100%;
-    padding-block: 0.5rem;
+    padding-block: 0.9rem;
+    margin-top: 1rem;
     border-radius: 6px;
     outline: none;
     border: none;
@@ -118,7 +120,7 @@ form>.google-login {
     align-items: center;
     gap: 0.6rem;
     width: 100%;
-    padding-block: 0.5rem;
+    padding-block: 0.8rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     margin-block: 1.5rem;
@@ -129,7 +131,7 @@ form>.google-login {
 
 .sign-up {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-block: 1.5rem;
 
 }
@@ -218,37 +220,29 @@ a:hover {
 
 }
 
+@media screen and (max-width: 991px) {
+    .container-lg {
+        background-color: unset;
+    }
+}
+
 @media screen and (max-width:767px) {
 
-    .container {
-        background-color: rgb(216, 229, 235);
+    #form {
+
+        padding-left: 8%;
+        padding-right: 8%;
+
     }
 
     .left-col {
         padding-block: 2rem;
-
     }
 
-    .right-col {
-        padding: 24rem 2rem 2rem;
 
-    }
 }
 
-@media screen and (max-width:991px) {
 
-    body {
-        background-color: rgb(216, 229, 235);
-    }
-
-    .container {
-        background-color: unset;
-    }
-
-    .left-col {
-        background-color: white;
-    }
-}
 
 @media screen and (max-width:575px) {
 
@@ -264,9 +258,5 @@ a:hover {
         padding-left: 12%;
         padding-right: 12%;
 
-    }
-
-    .container {
-        min-width: 350px;
     }
 }
